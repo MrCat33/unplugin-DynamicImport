@@ -11,13 +11,13 @@
     "webpack"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/MrCat33/unplugin-console#readme",
+  "homepage": "https://github.com/MrCat33/unplugin-dynamic-import#readme",
   "bugs": {
-    "url": "https://github.com/MrCat33/unplugin-console/issues"
+    "url": "https://github.com/MrCat33/unplugin-dynamic-importe/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrCat33/unplugin-console.git"
+    "url": "git+https://github.com/MrCat33/unplugin-dynamic-import.git"
   },
   "author": "Konata",
   "files": [

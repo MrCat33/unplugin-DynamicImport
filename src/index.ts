@@ -5,7 +5,6 @@ import {
   createFilter,
   detectVueVersion,
 } from '@vue-macros/common'
-import { consoleConvert } from './core'
 
 export type Options = BaseOptions
 export type OptionsResolved = MarkRequired<Options, 'include' | 'version'>
@@ -23,7 +22,7 @@ export default createUnplugin<BaseOptions | undefined, false>(
   (userOptions = {}) => {
     const options = resolveOption(userOptions)
     const filter = createFilter(options)
-    const name = 'unplugin-console'
+    const name = 'unplugin-dynamic-import'
     return {
       name,
       enforce: 'post',
@@ -33,6 +32,8 @@ export default createUnplugin<BaseOptions | undefined, false>(
       },
 
       transform(code, id) {
+        // eslint-disable-next-line no-console
+        console.log(code, id)
         return undefined
       },
     }
