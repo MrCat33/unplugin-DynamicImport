@@ -1,0 +1,104 @@
+{
+  "name": "unplugin-dynamic-import",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.8.0",
+  "description": "Description.",
+  "keywords": [
+    "unplugin",
+    "rollup",
+    "vite",
+    "esbuild",
+    "webpack"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/MrCat33/unplugin-console#readme",
+  "bugs": {
+    "url": "https://github.com/MrCat33/unplugin-console/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrCat33/unplugin-console.git"
+  },
+  "author": "Konata",
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs"
+    },
+    "./vite": {
+      "require": "./dist/vite.js",
+      "import": "./dist/vite.mjs"
+    },
+    "./webpack": {
+      "require": "./dist/webpack.js",
+      "import": "./dist/webpack.mjs"
+    },
+    "./rollup": {
+      "require": "./dist/rollup.js",
+      "import": "./dist/rollup.mjs"
+    },
+    "./esbuild": {
+      "require": "./dist/esbuild.js",
+      "import": "./dist/esbuild.mjs"
+    },
+    "./*": [
+      "./*",
+      "./*.d.ts"
+    ]
+  },
+  "typesVersions": {
+    "*": {
+      "*": [
+        "./dist/*",
+        "./*"
+      ]
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "lint": "eslint --cache .",
+    "lint:fix": "pnpm run lint --fix",
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest",
+    "play": "npm -C playground run dev",
+    "typecheck": "tsc --noEmit",
+    "release": "bumpp && pnpm publish",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@babel/types": "^7.23.0",
+    "@rollup/pluginutils": "^5.0.5",
+    "@vue-macros/common": "^1.8.0",
+    "magic-string": "^0.30.4",
+    "minimatch": "^9.0.3",
+    "unplugin": "^1.5.0"
+  },
+  "devDependencies": {
+    "@sxzz/eslint-config": "^3.6.2",
+    "@sxzz/prettier-config": "^1.0.4",
+    "@types/node": "^20.8.3",
+    "bumpp": "^9.2.0",
+    "eslint": "^8.51.0",
+    "eslint-define-config": "^1.24.0",
+    "fast-glob": "^3.3.1",
+    "prettier": "^3.0.3",
+    "tsup": "^7.2.0",
+    "tsx": "^3.13.0",
+    "typescript": "^5.2.2",
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
+  },
+  "engines": {
+    "node": ">=16.14.0"
+  },
+  "prettier": "@sxzz/prettier-config"
+}
