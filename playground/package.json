@@ -9,7 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "unplugin-dynamic-import": "workspace:^",
+    "unplugin-svg-import": "workspace:^",
     "vue": "^3.3.4"
   },
   "devDependencies": {

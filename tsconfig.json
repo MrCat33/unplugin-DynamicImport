@@ -12,6 +12,5 @@
     "noUnusedLocals": true,
     "skipLibCheck": true
   },
-  "include": ["src", "tests"],
   "exclude": ["tests/fixtures"]
 }

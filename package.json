@@ -1,5 +1,5 @@
 {
-  "name": "unplugin-dynamic-import",
+  "name": "unplugin-svg-import",
   "version": "0.0.0",
   "packageManager": "pnpm@8.8.0",
   "description": "Description.",
@@ -11,13 +11,13 @@
     "webpack"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/MrCat33/unplugin-dynamic-import#readme",
+  "homepage": "https://github.com/MrCat33/unplugin-svg-import#readme",
   "bugs": {
-    "url": "https://github.com/MrCat33/unplugin-dynamic-importe/issues"
+    "url": "https://github.com/MrCat33/unplugin-svg-importe/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MrCat33/unplugin-dynamic-import.git"
+    "url": "git+https://github.com/MrCat33/unplugin-svg-import.git"
   },
   "author": "Konata",
   "files": [
@@ -78,13 +78,20 @@
     "@babel/types": "^7.23.0",
     "@rollup/pluginutils": "^5.0.5",
     "@vue-macros/common": "^1.8.0",
+    "cors": "^2.8.5",
+    "etag": "^1.8.1",
+    "local-pkg": "^0.5.0",
     "magic-string": "^0.30.4",
     "minimatch": "^9.0.3",
+    "svg-baker": "^1.7.0",
+    "svgo": "^3.0.2",
     "unplugin": "^1.5.0"
   },
   "devDependencies": {
     "@sxzz/eslint-config": "^3.6.2",
     "@sxzz/prettier-config": "^1.0.4",
+    "@types/cors": "^2.8.16",
+    "@types/etag": "^1.8.3",
     "@types/node": "^20.8.3",
     "bumpp": "^9.2.0",
     "eslint": "^8.51.0",
